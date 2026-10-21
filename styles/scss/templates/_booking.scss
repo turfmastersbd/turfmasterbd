@@ -1,0 +1,295 @@
+.booking {
+    padding: rem(10px) 0 rem(50px) 0;
+    @include mq(large) {
+        padding: rem(50px) 0;
+    }
+
+    &__content {
+        @include mq(large) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__info-wrap {
+        @include mq(large) {
+            width: 58%;
+        }
+    }
+
+    &__summary-wrap {
+        margin-top: rem(50px);
+        position: relative;
+        @include mq(large) {
+            width: 38%;
+        }
+    }
+
+    &__summary-sticky {
+        position: sticky;
+        top: rem(120px);
+    }
+
+    &__form-wrap {
+        margin-top: rem(25px);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+        padding: rem(40px) rem(20px);
+        border-radius: rem(10px);
+        @include mq(large) {
+            padding: rem(40px);
+        }
+    }
+
+    &__form-heading {
+        font-size: rem(18px);
+        font-weight: bold;
+        margin-bottom: rem(20px);
+        @include mq(large) {
+            font-size: rem(20px);
+        }
+    }
+
+    &__form-notice-text {
+        color: red;
+        font-size: rem(14px);
+        line-height: rem(20px);
+        margin-bottom: rem(10px);
+    }
+
+    &__form {
+        margin-top: rem(20px);
+    }
+
+    &__form-input-wrap {
+        margin-bottom: rem(20px);
+    }
+
+    &__form-label {
+        display: block;
+        margin-bottom: rem(10px);
+    }
+
+    &__form-label-requierd {
+        color: red;
+    }
+
+    &__select {
+        display: block;
+        width: 100%;
+        padding: rem(10px);
+        border: 1px solid #aaa;
+        border-radius: rem(5px);
+    }
+
+    &__form-input {
+        display: block;
+        width: 100%;
+        padding: rem(10px);
+        border: 1px solid #aaa;
+        border-radius: rem(5px);
+    }
+
+    &__payment-wrap {
+        margin-top: rem(25px);
+        border: 1px solid #aaa;
+        padding: rem(20px);
+        border-radius: rem(10px);
+        @include mq(large) {
+            padding: rem(20px) ;
+        }
+    }
+
+    &__payment-heading {
+        font-size: rem(18px);
+        @include mq(large) {
+            font-size: rem(20px);
+        }
+    }
+
+    &__payment-amount {
+        font-size: rem(16px);
+        font-weight: bold;
+        margin-top: rem(20px);
+    }
+
+    &__payment-option-wrap {
+        margin-top: rem(20px);
+        display: flex;
+        flex-direction: column;
+        gap: rem(10px);
+    }
+
+    &__payment-option {
+        padding: rem(20px) rem(10px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #aaa;
+        border-radius: rem(5px);
+    }
+
+    &__payment-label {
+        font-size: rem(14px);
+        margin-left: rem(10px);
+        @include mq(large) {
+            font-size: rem(18px);
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__payment-option-logo-wrap {
+        width: 70px;
+    }
+
+    &__payment-option-logo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__payment-divider-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: rem(10px);
+
+        hr {
+            width: 100%;
+            height: 1px;
+            background: #aaa;
+            border: none;
+        }
+    }
+
+    &__payment-divider {
+        margin: rem(10px) 0;
+        text-align: center;
+    }
+
+    &__payment-agree-text {
+        margin: rem(10px) 0;
+        font-size: rem(14px);
+    }
+
+    &__payment-button {
+        width: 100%;
+    }
+
+    &__summary-heading {
+        font-size: rem(18px);
+        @include mq(large) {
+            font-size: rem(20px);
+        }
+    }
+
+    &__summary-info-wrap {
+        margin-top: rem(20px);
+    }
+
+    &__summary-user-name {
+        font-size: rem(16px);
+        margin-bottom: rem(10px);
+        @include mq(large) {
+            font-weight: normal;
+        }
+    }
+
+    &__summary-user-contact {
+        font-size: rem(16px);
+        margin-bottom: rem(10px);
+    }
+
+    &__summary-slot-info {
+        margin-top: rem(20px);
+        border: 1px solid #aaa;
+        padding: 0 rem(10px);
+        border-radius: rem(5px);
+
+        p {
+            margin: rem(10px) 0;
+        }
+    }
+
+    &__summary-arena {
+        font-size: rem(16px);
+        font-weight: 600;
+    }
+
+    &__summary-slot {
+        font-size: rem(14px);
+    }
+
+    &__summary-duration {
+        font-size: rem(14px);
+    }
+
+    &__summary-amount-wrap {
+        margin-top: rem(20px);
+        background: #ddd;
+        padding: rem(20px) rem(10px);
+        border-radius: rem(5px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__summary-amount {
+        font-weight: bold;
+    }
+
+    &__summary-help-wrap {
+        margin-top: rem(20px);
+        border: 1px solid #aaa;
+        padding: 0 rem(10px);
+        border-radius: rem(5px);
+
+        p {
+            margin: rem(10px) 0;
+        }
+    }
+
+    &__summary-help-title {
+        font-size: rem(16px);
+        font-weight: 600;
+    }
+
+    &__summary-help-text {
+        font-size: rem(14px);
+        margin-bottom: rem(15px) !important;
+    }
+
+    &__summary-phone-text {
+        font-size: rem(14px);
+    }
+
+    &__summary-phone {
+        color: $fc-primary--dark;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__summary-email {
+        color: $fc-primary--dark;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.transactions-summary {
+    margin-top: rem(20px);
+}
+
+.transactions-header {
+    margin-top: rem(30px);
+}
+
+.transactions-title {
+    font-size: rem(30px);
+}

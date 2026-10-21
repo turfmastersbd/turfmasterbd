@@ -1,0 +1,91 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+/// Regular font family
+/// @type List
+$primary-font: "ProximaNova";
+$secondary-font: "Teko";
+
+/// font sizes for different width screen
+$fs-heading--extra-large: 48px;
+$fs-heading--large: 36px;
+$fs-heading--medium: 32px;
+$fs-heading--small: 28px;
+$fs-primary-text--large: 24px;
+$fs-primary-text--medium: 20px;
+$fs-tertiary-text--small: 18px;
+$fs-secondary-text--large: 16px;
+$fs-secondary-text--small: 14px;
+$fs-primary-button: 15px;
+$fs-seconday-primary-button: 12px;
+
+
+/// font weight for the website
+$fw-normal: normal;
+$fw-extra-bold: 800;
+$fw-bold: bold;
+$fw-semi-bold: 600;
+$fw-semi-medium: 500;
+$fw-light: 300;
+
+/// color scheme for the website
+/// @type Color
+$fc-primary--dark: #000814;
+$fc-primary--gray: #757575;
+$fc-primary--white: rgb(255, 255, 255);
+$fc-secondary--dark: rgb(0, 0, 0);
+$fc-card--red: #C90000;
+
+
+//background-colors
+$bgc-primary--dark: linear-gradient(#000814 50%, #000000 100%);
+$bgc-primary--white: rgb(255, 255, 255);
+$bgc-secondary--dark: rgb(20, 21, 21);
+$bgc-secondary--white: #F5F5F5;
+$bgc-tertiary--white: rgb(223, 234, 255);
+$bgc-nav-open: rgb(248, 248, 248);
+$bgc-code: rgb(245, 245, 245);
+$bgc-gray: rgb(242, 242, 242);
+$bgc-blog: rgb(249, 249, 249);
+$bgc-primary-button: linear-gradient(#0096C7, #0077B6);
+$bgc-primary-button--hover: #FC3B68;
+$bgc-secondary-button--dark:#9D0208;
+$bgc-secondary-button--light: #D00000;
+$bgc-red-card: #C90000;
+$bgc-header: linear-gradient(to right, #0077B6, #03045E 70%);
+$bgc-footer: linear-gradient(#03045E 50%, #2374BB);
+
+//border-colors
+$brc-primary--black: #000000;
+$brc-primary--white: #ffffff;
+
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1660px !default;
+
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'extra-small': 320px,
+  'small': 640px,
+  'medium': 768px,
+  'medium-small': 980px,
+  'large': 1024px,
+  'extra-large': 1280px,
+  'double-extra-large': 1536px
+
+) !default;
+
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;

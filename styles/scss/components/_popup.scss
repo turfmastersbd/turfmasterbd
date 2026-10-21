@@ -1,0 +1,45 @@
+.delete-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.delete-modal {
+  background: white;
+  padding: rem(50px);
+  border-radius: 10px;
+  width: rem(700px);
+}
+
+.delete-modal-heading {
+  font-size: rem(40px);
+  text-align: center;
+  margin-bottom: rem(20px);
+  line-height: 1.2;
+}
+
+.delete-modal-text {
+  text-align: center;
+  margin-bottom: rem(40px);
+  font-size: rem(20px);
+}
+
+.delete-modal-text-name {
+  color: #0059A9;
+}
+
+.delete-modal-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: rem(20px);
+}
+
+.confirm-delete-button {
+  flex: inherit !important;
+  padding: rem(10px) rem(40px) !important;
+}

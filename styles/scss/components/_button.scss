@@ -1,0 +1,108 @@
+.primary-button {
+    display: table;
+    padding: rem(10px) rem(40px);
+    background: transparent;
+    color: #ffffff;
+    border-radius: rem(5px);
+    text-transform: uppercase;
+    font-size: rem(14px);
+    border: 1px solid #ffffff;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    white-space: nowrap;
+
+    &:hover {
+        border: 1px solid transparent;
+        background: #ee9c39;
+        color: #000000;
+        cursor: pointer;
+    }
+}
+
+.secondary-button {
+    display: table;
+    padding: rem(10px) rem(40px);
+    background: transparent;
+    color: $fc-primary--dark;
+    border-radius: rem(5px);
+    text-transform: uppercase;
+    font-size: rem(14px);
+    border: 1px solid $fc-primary--dark;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    white-space: nowrap;
+
+    &:hover {
+        border: 1px solid transparent;
+        background: $fc-primary--dark;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    &--small {
+        padding: rem(10px) rem(16px);
+    }
+}
+
+.tertiary-button {
+    display: table;
+    padding: rem(10px) rem(40px);
+    background: $fc-primary--dark;
+    color: #ffffff;
+    border-radius: rem(5px);
+    text-transform: uppercase;
+    font-size: rem(14px);
+    border: 1px solid $fc-primary--dark;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    white-space: nowrap;
+
+    &:hover {
+        border: 1px solid $fc-primary--dark;
+        background: transparent;
+        color: $fc-primary--dark;
+        cursor: pointer;
+    }
+}
+
+.button-wrap {
+    padding-bottom: rem(50px);
+    display: flex;
+    justify-content: center;
+    @include mq(large) {
+        padding-bottom: rem(100px);
+    }
+}
+
+.sticky-button {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 999999999;
+    background: #000814;
+    border: 1px solid #000814;
+    white-space: nowrap;
+    text-align: center;
+    border-radius: 0;
+    transition: 0;
+    @include mq(large) {
+        top: 50%;
+        right: 0;
+        left: inherit;
+        width: auto;
+        border-radius: rem(5px);
+        transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+        &:hover {
+            transform: scaleX(1.1);
+            transform-origin: right;
+        }
+
+    }
+
+    &:hover {
+        border: 1px solid #000814;
+        background: #000814;
+        color: #ffffff;
+        cursor: pointer;
+    }
+}

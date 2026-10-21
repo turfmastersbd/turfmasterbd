@@ -1,0 +1,329 @@
+.hero {
+  .swiper {
+    margin-top: rem(30px);
+    border-radius: rem(10px);
+  }
+
+  &__slider-image-wrap {
+    border-radius: rem(10px);
+    height: rem(160px);
+    @include mq(large) {
+      height: rem(400px);
+    }
+  }
+
+  &__slider-item-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: rem(10px);
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: rem(25px) !important;
+  height: rem(25px) !important;
+  color: $fc-primary--dark !important;
+  @include mq(large) {
+    width: rem(30px) !important;
+    height: rem(30px) !important;
+  }
+}
+
+// Our Turf Section
+.our-turfs {
+  padding: rem(50px) 0 rem(20px);
+  @include mq(large) {
+    padding: rem(100px) 0;
+  }
+
+  &__text {
+    text-align: center;
+    margin-top: rem(10px);
+    font-size: rem(16px);
+    line-height: 1.3;
+    color: #000000;
+    @include mq(large) {
+      font-size: rem(18px);
+      width: 40%;
+      margin: rem(10px) auto 0;
+    }
+  }
+
+  &__content {
+    margin-top: rem(30px);
+    @include mq(large) {
+      margin-top: rem(50px);
+    }
+
+    @include mq(large) {
+      display: flex;
+      justify-content: center;
+      gap: rem(30px);
+    }
+  }
+
+  &__wrapper {
+    flex-basis: 50%;
+  }
+
+  &__turf-wrap {
+    margin-bottom: rem(30px);
+    transition: 0.4s;
+    @include mq(large) {
+      margin-bottom: 0;
+
+      &:hover {
+        cursor: pointer;
+        .our-turfs__turf-image-wrap {
+          transform: translateY(-20px);
+        }
+      }
+    }    
+  }
+
+  &__turf-image-wrap {
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    height: rem(400px);
+    width: 100%;
+    position: relative;
+    @include mq(large) {
+      height: rem(600px);
+    }
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      inset: 0;
+      border-radius: rem(10px);
+    }
+  }
+
+  &__image-title {
+    position: absolute;
+    font-size: rem(30px);
+    font-weight: $fw-extra-bold;
+    text-transform: uppercase;
+    font-style: italic;
+    color: transparent;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(-20px);
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px #fff;
+    opacity: 0.5;
+    @include mq(large) {
+      font-size: rem(40px);
+    }
+  }
+
+  &__turf-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: rem(10px);
+  }
+
+  &__turf-name {
+    font-size: rem(25px);
+    font-weight: $fw-extra-bold;
+    font-style: italic;
+    margin-top: rem(10px);
+    color: #000000;
+  }
+
+  &__turf-text {
+    margin-top: rem(5px);
+    font-size: rem(16px);
+    color: $fc-primary--dark;
+  }
+}
+
+// Facilities Section
+.our-facilities {
+  padding-bottom: rem(30px);
+  @include mq(large) {
+    padding-bottom: rem(100px);
+  }
+
+  &__content {
+    margin-top: rem(30px);
+    @include mq(large) {
+      margin-top: rem(50px);
+      display: flex;
+      justify-content: center;
+      gap: rem(30px);
+    }
+  }
+
+  &__column {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    border-radius: rem(10px);
+    padding: rem(20px);
+    margin-bottom: rem(20px);
+    @include mq(large) {
+      padding: rem(50px);
+      margin-bottom: 0;
+    }
+  }
+
+  &__list-heading {
+    text-align: center;
+    font-size: rem(25px);
+    font-style: italic;
+    font-weight: $fw-extra-bold;
+  }
+
+  &__list-wrap {
+    margin: rem(20px) 0;
+    @include mq(large) {
+      margin: rem(30px) 0;
+    }
+  }
+
+  &__list-item {
+    font-size: rem(18px);
+    margin-bottom: rem(10px);
+    margin-left: rem(20px);
+    list-style: none;
+    position: relative;
+    @include mq(large) {
+      margin-left: rem(40px);
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      width: rem(15px);
+      height: rem(15px);
+      border-radius: 50%;
+      background: #000000;
+      position: absolute;
+      top: rem(2px);
+      left: rem(-30px);
+    }
+
+    &--green {
+      &::before {
+        content: '';
+        display: block;
+        width: rem(15px);
+        height: rem(15px);
+        border-radius: 50%;
+        background: $fc-primary--dark;
+      }
+    }
+
+    &--red {
+      color: #ccc;
+      &::before {
+        content: '';
+        display: block;
+        width: rem(15px);
+        height: rem(15px);
+        border-radius: 50%;
+        background: #c41d25;
+      }
+    }
+  }
+
+  &__button {
+    display: table;
+    margin: auto;
+  }
+}
+
+// Map Section
+.map {
+  padding-bottom: rem(30px);
+  @include mq(large) {
+    padding-bottom: rem(100px);
+  }
+
+  &__content {
+    margin-top: rem(30px);
+    @include mq(large) {
+      display: flex;
+      justify-content: space-between;
+      gap: rem(30px);
+      margin-top: rem(50px);
+    }
+  }
+
+  &__skyturf {
+    width: 100%;
+  }
+
+  &__timeupturf {
+    width: 100%;
+  }
+
+  &__map {
+    height: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: rem(10px);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    @include mq(large) {
+      width: 100%;
+      height: rem(500px);
+      margin-bottom: 0;
+    }
+  }
+
+  &__timeupturf {
+    margin-top: rem(20px);
+    @include mq(large) {
+      margin-top: 0;
+    }
+  }
+}
+
+// Gallery Section
+.gallery {
+  padding-bottom: rem(30px);
+  @include mq(large) {
+    padding-bottom: rem(100px);
+  }
+
+  &__content {
+    margin-top: rem(30px);
+    @include mq(large) {
+      margin-top: rem(50px);
+    }
+  }
+
+  &__slider-image-wrap {
+    width: 100%;
+    height: rem(100px);
+    @include mq(large) {
+      height: rem(150px);
+    }
+  }
+
+  &__slider-item-image {
+    width: 100%;
+    height: 100%;
+    border-radius: rem(10px);
+    object-fit: cover;
+  }
+
+  &__button-wrap {
+    margin-top: rem(30px);
+    display: flex;
+    justify-content: center;
+    @include mq(large) {
+      margin-top: rem(50px);
+    }
+  }
+}
+
+//updated

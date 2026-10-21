@@ -1,0 +1,40 @@
+{
+  "coupons": [
+    {
+      "code": "WELCOME50",
+      "discount": 50,
+      "type": "fixed",
+      "description": "Welcome bonus - ৳50 off",
+      "active": true,
+      "minAmount": 500,
+      "maxUses": null,
+      "usedCount": 1,
+      "validFrom": "2026-01-01",
+      "validUntil": "2026-12-31"
+    },
+    {
+      "code": "SAVE10",
+      "discount": 10,
+      "type": "percentage",
+      "description": "10% discount on any booking",
+      "active": true,
+      "minAmount": 1000,
+      "maxUses": 100,
+      "usedCount": 0,
+      "validFrom": "2026-01-01",
+      "validUntil": "2026-12-31"
+    },
+    {
+      "code": "NEWYEAR2026",
+      "discount": 200,
+      "type": "fixed",
+      "description": "New Year Special - ৳200 off",
+      "active": true,
+      "minAmount": 2000,
+      "maxUses": 50,
+      "usedCount": 0,
+      "validFrom": "2026-01-01",
+      "validUntil": "2026-01-31"
+    }
+  ]
+}

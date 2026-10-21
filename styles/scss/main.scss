@@ -1,0 +1,7 @@
+@import './abstracts/variables', './abstracts/mixins', './abstracts/functions';
+
+@import './base/normalize', './base/base', './base/typography', './base/helpers', './base/fonts';
+
+@import './components/button', './components/header', './components/footer', './components/global-table', './components/popup', './components/global';
+
+@import './templates/home', './templates/signup', './templates/signin', './templates/gallery', './templates/contact', './templates/facilities', './templates/dashboard', './templates/booking', './templates/projects', './templates/legal';

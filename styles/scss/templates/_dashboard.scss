@@ -1,0 +1,433 @@
+.dashboard {
+    padding: rem(50px) 0;
+
+    &__content {
+        // max-width: rem(1100px);
+        width: 100%;
+        margin: auto;
+    }
+
+    &__greetings {
+        @include mq(large) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__greeting-text {
+        text-align: center;
+        font-size: rem(18px);
+        @include mq(large) {
+            font-size: rem(26px);
+            text-align: left;
+        }
+    }
+
+    &__button-wrap {
+        margin-top: rem(10px);
+        display: flex;
+        justify-content: center;
+        @include mq(large) {
+            margin-top: 0;
+            display: block;
+        }
+    }
+
+    &__profile {
+        margin-top: rem(50px);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+        padding: rem(40px) rem(20px);
+        border-radius: rem(10px);
+        margin-bottom: rem(25px);
+        @include mq(large) {
+            margin-bottom: rem(50px);
+            padding: rem(40px);
+        }
+    }
+
+    &__profile-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__profile-title {
+        font-size: rem(18px);
+        font-weight: bold;
+        @include mq(large) {
+            font-size: rem(20px);
+        }
+    }
+
+    &__profile-role {
+        font-size: rem(16px);
+    }
+
+    &__profile-info-wrap {
+        margin-top: rem(20px);
+    }
+
+    &__profile-label {
+        font-size: rem(16px);
+        margin-bottom: rem(10px);
+        @include mq(large) {
+            font-size: rem(18px);
+        }
+    }
+
+    &__profile-input {
+        font-size: rem(18px);
+        @include mq(large) {
+            font-size: rem(20px);
+        }
+    }
+
+    &__booking {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+        padding: rem(40px) rem(20px);
+        border-radius: rem(10px);
+        // overflow: hidden;
+        // max-height: rem(500px);
+        // overflow-y: scroll;
+        @include mq(large) {
+            padding: rem(40px);
+        }
+    }
+
+    &__booking-scroll {
+        overflow: scroll;
+        max-height: rem(500px);
+    }
+
+    &__booking-title {
+        font-size: rem(18px);
+        font-weight: bold;
+        margin-bottom: rem(20px);
+        @include mq(large) {
+            font-size: rem(20px);
+        }
+    }
+
+    &__booking-info-wrap {
+        margin-top: rem(20px);
+    }
+
+    &__booking-list {
+        position: relative !important;
+        margin-top: rem(20px);
+
+        th, td {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        thead tr {
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #F8F9FA;
+        }
+
+        select {
+            padding: rem(5px) rem(10px);
+            border-radius: rem(5px);
+            border: 1px solid #aaa;
+        }
+    }
+
+    &__booking-list-item {
+        margin-top: rem(20px);
+    }
+
+    &__booking-label {
+        font-size: rem(16px);
+        margin-top: rem(20px);
+        @include mq(large) {
+            font-size: rem(18px);
+        }
+    }
+
+    &__booking-input {
+        font-size: rem(18px);
+        @include mq(large) {
+            font-size: rem(20px);
+        }
+    }
+
+    &__booking-button-wrap {
+        margin-top: rem(20px);
+        display: flex;
+        align-items: center;
+        gap: rem(20px);
+    }
+
+    &__tabs {
+        margin-top: rem(25px);
+        display: flex;
+        align-items: center;
+        gap: rem(10px);
+        margin-bottom: rem(10px);
+        overflow-x: auto;
+        @include mq(large) {
+            margin-top: rem(50px);
+            // overflow-x: hidden;
+        }
+
+        .active {
+            display: table;
+            padding: rem(10px) rem(16px);
+            background: $fc-primary--dark;
+            color: #ffffff;
+            border-radius: rem(5px);
+            text-transform: uppercase;
+            font-size: rem(14px);
+            border: 1px solid $fc-primary--dark;
+            transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            white-space: nowrap;
+        }
+    }
+
+    &__tab-content {
+        margin-top: rem(25px);
+
+        .react-tabs__tab-list {
+            list-style: none !important; 
+        }
+    }
+
+    &__filter-wrap {
+        @include mq(large) {
+            display: flex;
+            justify-content: flex-end;
+            gap: rem(20px);
+        }
+    }
+
+    &__filter {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: rem(20px);
+        margin: rem(10px) 0;
+
+        input {
+            padding: rem(5px) rem(20px);
+            border-radius: rem(5px);
+            border: 1px solid #aaa;
+        }
+
+        select {
+            padding: rem(5px) rem(20px);
+            border-radius: rem(5px);
+            border: 1px solid #aaa;
+        }
+    }
+
+    &__slot-table-wrap {
+        overflow-x: scroll;
+
+        th {
+            padding: rem(5px);
+        }
+
+        td {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            select {
+                font-size: rem(14px);
+                padding: (5px) rem(20px);
+            }
+        }
+
+        input {
+            padding: rem(5px);
+        }
+
+        select {
+            padding: rem(5px) rem(20px);
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        option {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        button {
+            padding: rem(2px) rem(20px);
+            background: #214420;
+            border: none;
+            border-radius: rem(2px);
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__user-table-wrap {
+        overflow-x: scroll;
+        @include mq(1115px) {
+            overflow-x: hidden;
+        }
+
+        td {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            padding: 0 rem(20px);
+        }
+
+        select {
+            padding: rem(5px) rem(20px);
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        option {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        button {
+            padding: rem(2px) rem(20px);
+            background: #C41D25;
+            border: none;
+            border-radius: rem(2px);
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__loading {
+        margin-top: rem(25px);
+    }
+}
+
+.transfer-form button {
+    margin-top: rem(20px) !important;
+}
+
+.pending-section {
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    padding: rem(30px);
+    margin-bottom: rem(50px);
+    border-radius: rem(10px);
+}
+
+.pending-title {
+    text-align: center;
+}
+
+.pending-subtitle {
+    text-align: center;
+    margin-top: rem(10px);
+}
+
+.transfer-request-header {
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    margin-top: rem(20px);
+    border-radius: rem(10px);
+    color: #ffffff;
+    padding: rem(20px);
+    margin-bottom: rem(20px);
+}
+
+.sender-avatar {
+    width: rem(50px);
+    height: rem(50px);
+    border-radius: 50%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F8F9FA;
+    font-size: rem(30px);
+    font-weight: bold;
+    color: #666;
+    margin: auto;
+    margin-bottom: rem(20px);
+}
+
+.sender-info h4 {
+    text-align: center;
+    font-size: rem(30px);
+    font-weight: bold;
+    margin-bottom: rem(10px);
+}
+
+.sender-phone {
+    text-align: center;
+    font-size: rem(20px);
+    margin-bottom: rem(10px);
+}
+
+.transfer-amount-badge {
+    text-align: center;
+    font-weight: bold;
+    font-size: rem(20px);
+}
+
+.transfer-request-card > .transfer-notes, .transfer-date {
+    text-align: center;
+    margin-bottom: rem(10px);
+}
+
+.pending-status {
+    text-align: center;
+}
+
+.transfer-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: rem(10px);
+    margin-top: rem(20px);
+}
+
+.approve-btn {
+    background: #4CAF50;
+    color: #ffffff;
+    padding: rem(10px) rem(40px);
+    border: 1px solid #4CAF50;
+    border-radius: rem(5px);
+    text-transform: uppercase;
+    font-size: rem(14px);
+    font-weight: bold;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    &:hover {
+        border: 1px solid #348538;
+        background: #348538;
+        cursor: pointer;
+    }
+}
+
+.reject-btn {
+    background: #f44336;
+    color: #ffffff;
+    padding: rem(10px) rem(40px);
+    border: 1px solid #f44336;
+    border-radius: rem(5px);
+    text-transform: uppercase;
+    font-size: rem(14px);
+    font-weight: bold;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    &:hover {
+        border: 1px solid #da190b;
+        background: #da190b;
+        cursor: pointer;
+    }
+}
