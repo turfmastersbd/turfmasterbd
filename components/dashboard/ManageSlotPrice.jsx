@@ -8,11 +8,11 @@ import { TIME_SLOTS } from "@/lib/pricing";
 const ManageSlotPrice = () => {
     const [pricingData, setPricingData] = useState([]);
     const [loading, setLoading] = useState(true);
-    const [selectedArena, setSelectedArena] = useState("Royel Turf & Swimming Zone");
+    const [selectedArena, setSelectedArena] = useState("Turf Masters BD");
     const [activeDayTab, setActiveDayTab] = useState("regular"); // "regular" | "friday" | "saturday"
 
     const [arenaPricing, setArenaPricing] = useState({
-        arenaName: "Royel Turf & Swimming Zone",
+        arenaName: "Turf Masters BD",
         defaultPrice: 2000,
         timeSlots: [],
         fridayDefaultPrice: null,

@@ -23,7 +23,7 @@ export default function ArenasAccount() {
 
   // Income Form State
   const [incomeForm, setIncomeForm] = useState({
-    arena: "Royel Turf & Swimming Zone",
+    arena: "Turf Masters BD",
     type: "",
     customType: "",
     amount: "",
@@ -33,7 +33,7 @@ export default function ArenasAccount() {
 
   // Expense Form State
   const [expenseForm, setExpenseForm] = useState({
-    arena: "Royel Turf & Swimming Zone",
+    arena: "Turf Masters BD",
     type: "",
     salaryName: "",
     utilityType: "",
@@ -52,7 +52,7 @@ export default function ArenasAccount() {
       const queryParams = new URLSearchParams();
       if (selectedDate) queryParams.append("date", selectedDate);
       if (selectedMonth) queryParams.append("month", selectedMonth);
-      queryParams.append("arena", "Royel Turf & Swimming Zone");
+      queryParams.append("arena", "Turf Masters BD");
 
       const qs = queryParams.toString();
 
@@ -109,7 +109,7 @@ export default function ArenasAccount() {
       if (res.ok) {
         toast.success(editingIncomeId ? "Income updated" : "Income added");
         setIncomeForm({
-          arena: "Royel Turf & Swimming Zone",
+          arena: "Turf Masters BD",
           type: "",
           customType: "",
           amount: "",
@@ -154,7 +154,7 @@ export default function ArenasAccount() {
       if (res.ok) {
         toast.success(editingExpenseId ? "Expense updated" : "Expense added");
         setExpenseForm({
-          arena: "Royel Turf & Swimming Zone",
+          arena: "Turf Masters BD",
           type: "",
           salaryName: "",
           utilityType: "",
@@ -222,9 +222,9 @@ export default function ArenasAccount() {
     }
   };
 
-  const skyTurfIncomes = incomes.filter(inc => inc.arena === "Royel Turf & Swimming Zone");
-  const skyTurfExpenses = expenses.filter(exp => exp.arena === "Royel Turf & Swimming Zone");
-  const skyTurfSummary = summary?.summary?.find(s => s.arena === "Royel Turf & Swimming Zone") || { income: 0, expense: 0, balance: 0 };
+  const skyTurfIncomes = incomes.filter(inc => inc.arena === "Turf Masters BD");
+  const skyTurfExpenses = expenses.filter(exp => exp.arena === "Turf Masters BD");
+  const skyTurfSummary = summary?.summary?.find(s => s.arena === "Turf Masters BD") || { income: 0, expense: 0, balance: 0 };
 
   if (loading && !summary) return <Loading />;
 
@@ -298,7 +298,7 @@ export default function ArenasAccount() {
       </div>
 
       <div className="arena-details-grid" id="arenas-summary-section">
-        {summary?.summary.filter(s => s.arena === "Royel Turf & Swimming Zone").map((s) => (
+        {summary?.summary.filter(s => s.arena === "Turf Masters BD").map((s) => (
           <div key={s.arena} className="arena-summary-card">
             <h4>{s.arena}</h4>
             <div className="summary-row">
@@ -328,7 +328,7 @@ export default function ArenasAccount() {
                 onClick={() => {
                   setEditingIncomeId(null);
                   setIncomeForm({
-                    arena: "Royel Turf & Swimming Zone",
+                    arena: "Turf Masters BD",
                     type: "",
                     customType: "",
                     amount: "",
@@ -407,9 +407,9 @@ export default function ArenasAccount() {
           )}
 
           <div className="table-container mt-4">
-            {/* Royel Turf & Swimming Zone Incomes */}
+            {/* Turf Masters BD Incomes */}
             <div className="table-responsive">
-              <h3 className="section-subtitle">Royel Turf & Swimming Zone Incomes</h3>
+              <h3 className="section-subtitle">Turf Masters BD Incomes</h3>
               <table className="transactions-table">
                 <thead>
                   <tr>
@@ -422,7 +422,7 @@ export default function ArenasAccount() {
                 </thead>
                 <tbody>
                   {skyTurfIncomes.length === 0 ? (
-                    <tr><td colSpan="5" className="text-center">No Royel Turf & Swimming Zone records</td></tr>
+                    <tr><td colSpan="5" className="text-center">No Turf Masters BD records</td></tr>
                   ) : (
                     skyTurfIncomes.map((inc) => (
                       <tr key={inc._id}>
@@ -477,7 +477,7 @@ export default function ArenasAccount() {
                 onClick={() => {
                   setEditingExpenseId(null);
                   setExpenseForm({
-                    arena: "Royel Turf & Swimming Zone",
+                    arena: "Turf Masters BD",
                     type: "",
                     salaryName: "",
                     utilityType: "",
@@ -590,9 +590,9 @@ export default function ArenasAccount() {
           )}
 
           <div className="table-container mt-4">
-            {/* Royel Turf & Swimming Zone Expenses */}
+            {/* Turf Masters BD Expenses */}
             <div className="table-responsive">
-              <h3 className="section-subtitle">Royel Turf & Swimming Zone Expenses</h3>
+              <h3 className="section-subtitle">Turf Masters BD Expenses</h3>
               <table className="transactions-table">
                 <thead>
                   <tr>
@@ -606,7 +606,7 @@ export default function ArenasAccount() {
                 </thead>
                 <tbody>
                   {skyTurfExpenses.length === 0 ? (
-                    <tr><td colSpan="6" className="text-center">No Royel Turf & Swimming Zone records</td></tr>
+                    <tr><td colSpan="6" className="text-center">No Turf Masters BD records</td></tr>
                   ) : (
                     skyTurfExpenses.map((exp) => (
                       <tr key={exp._id}>

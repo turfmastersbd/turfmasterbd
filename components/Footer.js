@@ -14,7 +14,7 @@ const Footer = () => {
                                 <Link href='/' className='footer__logo-link'>
                                     <Image
                                         src={mainLogo}
-                                        alt='Footer Royel Turf & Swimming Zone Logo'
+                                        alt='Footer Turf Masters BD Logo'
                                         width={1000}
                                         className='footer__logo'
                                     />
@@ -22,7 +22,7 @@ const Footer = () => {
                             </div>
                             <div className='footer__description-wrap'>
                                 <p className='footer__description-text'>
-                                    Royel Turf & Swimming Zone — Where Champions Play. Experience premier artificial turf football with modern facilities and unforgettable moments.
+                                    Turf Masters BD — Where Champions Play. Experience premier artificial turf football with modern facilities and unforgettable moments.
                                 </p>
                             </div>
                         </div>
@@ -68,22 +68,22 @@ const Footer = () => {
                         </div>
                         <div className='footer__column'>
                             <h3 className='footer__column-heading'>LOCATION</h3>
-                            <address className='footer__address-text'>Chairman Bari, Goshai Pushkuruni, Lalmai, Cumilla</address>
+                            <address className='footer__address-text'>Shetu Housing, Sector 17, Uttara, Dhaka, Bangladesh, 1230</address>
                             <div className='footer__contact-wrap'>
                                 <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12.556 10.906L12.101 11.359C12.101 11.359 11.018 12.435 8.063 9.49698C5.108 6.55898 6.191 5.48298 6.191 5.48298L6.477 5.19698C7.184 4.49498 7.251 3.36698 6.634 2.54298L5.374 0.859979C4.61 -0.160021 3.135 -0.29502 2.26 0.57498L0.690002 2.13498C0.257002 2.56698 -0.0329985 3.12498 0.00200151 3.74498C0.0920015 5.33198 0.810001 8.74498 4.814 12.727C9.061 16.949 13.046 17.117 14.675 16.965C15.191 16.917 15.639 16.655 16 16.295L17.42 14.883C18.38 13.93 18.11 12.295 16.882 11.628L14.972 10.589C14.166 10.152 13.186 10.28 12.556 10.906Z" fill="white" />
                                 </svg>
-                                <Link href='tel: 01616753671' ><span className='footer__content-text'>Royel Turf & Swimming Zone : 01616753671</span></Link>
+                                <Link href='tel: 01901644240' ><span className='footer__content-text'>Turf Masters BD : 01901644240</span></Link>
                             </div>
 
                             <div className='footer__contact-wrap'>
                                 <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1.616 14C1.15533 14 0.771 13.846 0.463 13.538C0.155 13.23 0.000666667 12.8453 0 12.384V1.616C0 1.15533 0.154333 0.771 0.463 0.463C0.771667 0.155 1.15567 0.000666667 1.615 0H16.385C16.845 0 17.229 0.154333 17.537 0.463C17.845 0.771666 17.9993 1.156 18 1.616V12.385C18 12.845 17.8457 13.2293 17.537 13.538C17.2283 13.8467 16.8443 14.0007 16.385 14H1.616ZM9 7.116L17 1.885L16.692 1L9 6L1.308 1L1 1.885L9 7.116Z" fill="white" />
                                 </svg>
-                                <Link href='mailto: royelturf@gmail.com'><span className='footer__content-text'>royelturf@gmail.com</span></Link>
+                                <Link href='mailto: turfmastersbd@gmail.com' target='_blannk'><span className='footer__content-text'>turfmastersbd@gmail.com</span></Link>
                             </div>
                             <div className='footer__social-wrap'>
-                                <Link href='https://web.facebook.com/profile.php?id=61593199868148' target='_blank' className='footer__social-item-link'>
+                                <Link href='https://www.facebook.com/turfmastersuttara' target='_blank' className='footer__social-item-link'>
                                     <span className='visually-hidden'>facebook</span>
                                     <svg className='footer__social-item' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M20 10C20 4.48 15.52 0 10 0C4.48 0 0 4.48 0 10C0 14.84 3.44 18.87 8 19.8V13H6V10H8V7.5C8 5.57 9.57 4 11.5 4H14V7H12C11.45 7 11 7.45 11 8V10H14V13H11V19.95C16.05 19.45 20 15.19 20 10Z" fill="#ffffff" />
@@ -105,7 +105,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className='footer__copyright'>
-                        <p className='footer__copyright-text'>© All Rights Reserve by Royel Turf & Swimming Zone, 2026 made by &nbsp;
+                        <p className='footer__copyright-text'>© All Rights Reserve by Turf Masters BD, 2026 made by &nbsp;
                             <Link href="https://www.linkedin.com/in/minhazul-abedin-siam-08286012a/" target='_blank'>
                                 <span className='footer__copyright-text footer__copyright-text--underline'>Minhazul Abedin</span>
                             </Link>

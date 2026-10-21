@@ -60,7 +60,7 @@ const Header = () => {
             <Link href="/">
               <Image
                 src={mainLogo}
-                alt="Royel Turf & Swimming Zone Logo"
+                alt="Turf Masters BD Logo"
                 width={1000}
                 className="header__logo"
               />
@@ -103,7 +103,7 @@ const Header = () => {
                   <Link href="/" onClick={toggleMenu}>
                     <Image
                       src={mainLogo}
-                      alt="Royel Turf & Swimming Zone Logo"
+                      alt="Turf Masters BD Logo"
                       width={2000}
                       className="header__logo"
                     />

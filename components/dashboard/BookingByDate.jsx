@@ -11,7 +11,7 @@ export default function BookingByDate() {
   };
 
   const [selectedDate, setSelectedDate] = useState(getTodayDate());
-  const [selectedArena, setSelectedArena] = useState("Royel Turf & Swimming Zone");
+  const [selectedArena, setSelectedArena] = useState("Turf Masters BD");
   const [loading, setLoading] = useState(true);
   const [errorMsg, setErrorMsg] = useState("");
 
@@ -229,7 +229,7 @@ export default function BookingByDate() {
             className="secondary-button"
             onClick={() => {
               setSelectedDate(getTodayDate());
-              setSelectedArena("Royel Turf & Swimming Zone");
+              setSelectedArena("Turf Masters BD");
             }}
             style={{ marginRight: '10px', backgroundColor: '#6c757d', color: '#fff', border: 'none', padding: '8px 15px', borderRadius: '4px', cursor: 'pointer' }}
           >
@@ -365,7 +365,7 @@ export default function BookingByDate() {
           border: 2px solid #333;
         }
         .excel-header {
-          background-color: #132241;
+          background-color: #000814;
           padding: 12px;
           text-align: center;
           border-bottom: 2px solid #333;
@@ -461,10 +461,10 @@ export default function BookingByDate() {
         .summary-title {
           font-size: 20px;
           font-weight: bold;
-          color: #132241;
+          color: #000814;
           margin-bottom: 15px;
           text-transform: uppercase;
-          border-left: 5px solid #132241;
+          border-left: 5px solid #000814;
           padding-left: 10px;
         }
         .summary-table th {

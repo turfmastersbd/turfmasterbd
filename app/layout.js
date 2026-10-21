@@ -8,8 +8,8 @@ import PaymentStatusHandler from '@/components/PaymentStatusHandler';
 import { Suspense } from 'react';
 
 export const metadata = {
-  title: "Royel Turf & Swimming Zone",
-  description: "The Home of Football in Buchi",
+  title: "Turf Masters BD",
+  description: "The Home of Football in Uttara",
 };
 
 export default function RootLayout({ children }) {

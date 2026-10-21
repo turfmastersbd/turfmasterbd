@@ -78,8 +78,8 @@
     right: 0;
     left: 0;
     z-index: 999999999;
-    background: #132241;
-    border: 1px solid #132241;
+    background: #000814;
+    border: 1px solid #000814;
     white-space: nowrap;
     text-align: center;
     border-radius: 0;
@@ -100,8 +100,8 @@
     }
 
     &:hover {
-        border: 1px solid #132241;
-        background: #132241;
+        border: 1px solid #000814;
+        background: #000814;
         color: #ffffff;
         cursor: pointer;
     }

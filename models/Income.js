@@ -4,7 +4,7 @@ const incomeSchema = new mongoose.Schema({
   arena: {
     type: String,
     required: true,
-    enum: ["Royel Turf & Swimming Zone"],
+    enum: ["Turf Masters BD"],
   },
   type: {
     type: String,

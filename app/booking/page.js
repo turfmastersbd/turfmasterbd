@@ -86,7 +86,7 @@ const BookingContent = () => {
   }, [searchParams]);
 
   const [formData, setFormData] = useState({
-    arenaName: "Royel Turf & Swimming Zone",
+    arenaName: "Turf Masters BD",
     bookingDate: "",
     timeSlot: "",
     notes: "",
@@ -1021,19 +1021,19 @@ const BookingContent = () => {
                 </p>
                 <p className="booking__summary-phone-text">
                   Phone:
-                  <Link href="tel:01616753671">
+                  <Link href="tel:01901644240">
                     <span className="booking__summary-phone">
                       {" "}
-                      +8801616753671
+                      +8801901644240
                     </span>
                   </Link>
                 </p>
                 <p className="booking__summary-phone-text">
                   Email:
-                  <Link href="mailto:royelturf@gmail.com" target="_blank">
+                  <Link href="mailto:turfmastersbd@gmail.com " target="_blank">
                     <span className="booking__summary-email">
                       {" "}
-                      royelturf@gmail.com
+                      turfmastersbd@gmail.com 
                     </span>
                   </Link>
                 </p>

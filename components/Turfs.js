@@ -20,10 +20,10 @@ const Turfs = () => {
                                         className='our-turfs__turf-image'
                                         width={600}
                                     />
-                                    <span className='our-turfs__image-title'>Royel Turf & Swimming Zone</span>
+                                    <span className='our-turfs__image-title'>Turf Masters BD</span>
                                 </div>
-                                <h3 className='our-turfs__turf-name'>Royel Turf & Swimming Zone</h3>
-                                <p className='our-turfs__turf-text'>The Home of Football in Buchi</p>
+                                <h3 className='our-turfs__turf-name'>Turf Masters BD</h3>
+                                <p className='our-turfs__turf-text'>The Home of Football in Uttara</p>
                             </div>
                         </Link>
 

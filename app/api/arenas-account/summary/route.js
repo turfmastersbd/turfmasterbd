@@ -60,7 +60,7 @@ export async function GET(req) {
         ]);
 
         // Format data for easier use in frontend
-        const arenas = ["Royel Turf & Swimming Zone"];
+        const arenas = ["Turf Masters BD"];
         const summary = arenas.map(arena => {
             const income = incomeSummary.find(i => i._id === arena)?.totalIncome || 0;
             const expense = expenseSummary.find(e => e._id === arena)?.totalExpense || 0;

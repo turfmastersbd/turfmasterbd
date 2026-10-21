@@ -32,7 +32,7 @@ $fw-light: 300;
 
 /// color scheme for the website
 /// @type Color
-$fc-primary--dark: #132241;
+$fc-primary--dark: #000814;
 $fc-primary--gray: #757575;
 $fc-primary--white: rgb(255, 255, 255);
 $fc-secondary--dark: rgb(0, 0, 0);
@@ -40,7 +40,7 @@ $fc-card--red: #C90000;
 
 
 //background-colors
-$bgc-primary--dark: linear-gradient(#132241 50%, #0d303b 100%);
+$bgc-primary--dark: linear-gradient(#000814 50%, #000000 100%);
 $bgc-primary--white: rgb(255, 255, 255);
 $bgc-secondary--dark: rgb(20, 21, 21);
 $bgc-secondary--white: #F5F5F5;

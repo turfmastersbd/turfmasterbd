@@ -63,10 +63,10 @@ export default function SigninPage() {
 
           <div className="signin__form-wrap">
             <h3 className="secondary-heading signin__heading">
-              Welcome to Royel Turf & Swimming Zone
+              Welcome to Turf Masters BD
             </h3>
             <p className="primary-text signin__text">
-              The Home of Football in Buchi
+              The Home of Football in Uttara
             </p>
 
             <form className="signin__form" onSubmit={handleLogin}>

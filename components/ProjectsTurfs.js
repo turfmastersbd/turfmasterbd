@@ -17,11 +17,11 @@ const ProjectsTurfs = () => {
                         />
                     </div>
                     <div className="projects__turf-content-wrap">
-                        <h3 className='projects__turf-heading'>Royel Turf & Swimming Zone</h3>
+                        <h3 className='projects__turf-heading'>Turf Masters BD</h3>
                         <p className='projects__turf-location'>Shonir Akhra</p>
                         <p className='projects__turf-type'>Rooftop Turf</p>
                         <p className='projects__turf-est'>2023</p>
-                        <p className='projects__turf-tag'>Owned & Operated by Royel Turf & Swimming Zone</p>
+                        <p className='projects__turf-tag'>Owned & Operated by Turf Masters BD</p>
                     </div>
                 </div>
 

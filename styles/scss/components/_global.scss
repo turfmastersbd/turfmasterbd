@@ -28,9 +28,9 @@
                     }
 
                     &.active {
-                        background: #132241;
+                        background: #000814;
                         color: #ffffff;
-                        border-color: #132241;
+                        border-color: #000814;
                         box-shadow: 0 4px 14px rgba(36, 112, 9, 0.35);
 
                         .pricing-day-badge {
@@ -79,12 +79,12 @@
                     padding: 16px 20px;
                     background: #f8fafc;
                     border-radius: 12px;
-                    border-left: 4px solid #132241;
+                    border-left: 4px solid #000814;
                 }
                 .day-header-meta h4 {
                     font-size: 1.15rem;
                     font-weight: 700;
-                    color: #1e293b;
+                    color: #000814;
                     margin: 0;
                 }
                 .day-header-meta p {

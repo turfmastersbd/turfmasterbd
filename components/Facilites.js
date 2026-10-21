@@ -10,7 +10,7 @@ const Facilites = () => {
                     <h2 className='primary-heading our-facilities__heading'>Our Facilites</h2>
                     <div className='our-facilities__content'>
                         <div className='our-facilities__column'>
-                            <h3 className='our-facilities__list-heading'>Royel Turf & Swimming Zone Facilities</h3>
+                            <h3 className='our-facilities__list-heading'>Turf Masters BD Facilities</h3>
                             <div className='our-facilities__list-wrap'>
                                 <ul className='our-facilities__list'>
                                     <li className='our-facilities__list-item our-facilities__list-item--green'>Fast Aid</li>

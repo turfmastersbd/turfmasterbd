@@ -7,8 +7,8 @@ const refundAndCancellation = () => {
             <div className="container">
                 <h3 className='primary-heading legal__heading'>Refund and Cancellation policy</h3>
                 <div className='legal__content'>
-                  <h4>Royel Turf & Swimming Zone — Cancellation & Refund Policy</h4>
-                  <p>This policy applies to all football/sports turf slot bookings made via our website (www.mymensinghturfandtreat.com) or official helpline/WhatsApp. By confirming a slot with an advance payment to our bKash Merchant account (01620278838), customers agree to the terms below.</p>
+                  <h4>Turf Masters BD — Cancellation & Refund Policy</h4>
+                  <p>This policy applies to all football/sports turf slot bookings made via our website (www.turfmastersbd.com) or official helpline/WhatsApp. By confirming a slot with an advance payment to our bKash Merchant account (01901644240), customers agree to the terms below.</p>
                   <ol>
                     <li>
                       Cancellation & Refund Timeline <br />

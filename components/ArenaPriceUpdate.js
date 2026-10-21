@@ -4,7 +4,7 @@ import { useState } from 'react';
 const ArenaPriceUpdate = () => {
 
     const [formData, setFormData] = useState({
-        "Royel Turf & Swimming Zone": 2000,
+        "Turf Masters BD": 2000,
     });
 
     const [showConfirm, setShowConfirm] = useState(false);
@@ -29,9 +29,9 @@ const ArenaPriceUpdate = () => {
         <>
             <section>
                 <input
-                    value={formData["Royel Turf & Swimming Zone"]}
+                    value={formData["Turf Masters BD"]}
                     onChange={(e) =>
-                        setFormData({ ...formData, "Royel Turf & Swimming Zone": Number(e.target.value) })
+                        setFormData({ ...formData, "Turf Masters BD": Number(e.target.value) })
                     }
                 />
 
