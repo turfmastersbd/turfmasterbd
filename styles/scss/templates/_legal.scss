@@ -1,0 +1,44 @@
+.legal {
+    padding: rem(50px) 0;
+    @include mq(large) {
+        padding: rem(100px) 0;
+    }
+
+    &__heading {
+        font-size: rem(22px);
+        @include mq(large) {
+            font-size: rem(40px);
+        }
+    }
+
+    &__content {
+        max-width: rem(1000px);
+        margin: auto;
+        margin-top: rem(40px);
+
+        h4 {
+            font-size: rem(18px);
+            margin-bottom: rem(10px);
+            @include mq(large) {
+                font-size: rem(20px);
+            }
+        }
+
+        p {
+            font-size: rem(16px);
+            margin-bottom: rem(10px);
+            line-height: 1.5;
+        }
+
+        ol,
+        ul {
+            margin-bottom: rem(10px);
+            margin-left: rem(18px);
+        }
+
+        li {
+            margin-bottom: rem(5px);
+            line-height: 1.5;
+        }
+    }
+}

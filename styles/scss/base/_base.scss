@@ -1,0 +1,42 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+ html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  /**
+   * Make all elements from the DOM inherit from the parent box-sizing
+   * Since `*` has a specificity of 0, it does not override the `html` value
+   * making all elements inheriting from the root box-sizing value
+   * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+   */
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  // *::selection{
+  //   background: rgba($bgc-body, 0.7);
+  //   color: $fc-primary--light;
+  // }
+  /**
+   * Basic styles for links
+   */
+  a {
+    text-decoration: none;
+  
+    @include on-event {
+      text-decoration: none;
+    }
+  }
+  
+  #content{
+    overflow-x: hidden;
+  }

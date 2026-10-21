@@ -1,0 +1,6 @@
+.contact {
+    padding-top: rem(50px);
+    @include mq(large) {
+        padding-top: rem(100px);
+    }
+}

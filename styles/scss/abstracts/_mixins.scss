@@ -1,0 +1,65 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+    @if $self {
+      &,
+      &:hover,
+      &:active,
+      &:focus {
+        @content;
+      }
+    } @else {
+      &:hover,
+      &:active,
+      &:focus {
+        @content;
+      }
+    }
+  }
+  
+  /// Make a context based selector a little more friendly
+  /// @author Hugo Giraudel
+  /// @param {String} $context
+  @mixin when-inside($context) {
+    #{$context} & {
+      @content;
+    }
+  }
+  
+  // meadia query mixin with breakpoints//
+  @mixin mq($breakpoint) {
+  
+    // If the breakpoint exists in the map.
+    @if map-has-key($breakpoints, $breakpoint) {
+    
+      // Get the breakpoint value.
+      $breakpoint-value: map-get($breakpoints, $breakpoint);
+    
+      //Build the media query
+      @media (min-width: $breakpoint-value) {
+        @content;
+      }
+    }
+    @else {
+        @media (min-width: $breakpoint) {
+          @content;
+           }
+        }
+  }
+  
+  @mixin hidden-text{
+    position: absolute !important;
+    overflow: hidden !important;
+    clip: rect(1px,1px,1px,1px) !important;
+    width: 1px !important;
+    height: 1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }

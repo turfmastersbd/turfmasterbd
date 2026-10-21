@@ -1,0 +1,128 @@
+.footer {
+    background: $bgc-primary--dark;
+    padding: rem(30px) 0 rem(50px);
+    @include mq(large) {
+        padding: rem(70px) 0 rem(30px);
+    }
+
+    &__content {
+        @include mq(large) {
+            display: flex;
+            justify-content: space-between;
+            gap: rem(50px);
+        }
+    }
+
+    &__column {
+        margin-top: rem(30px);
+        @include mq(large) {
+            width: 25%;
+            margin-top: 0;
+        }
+    }
+
+    &__logo-wrap {
+        max-width: rem(100px);
+        width: 100%;
+        @include mq(large) {
+            max-width: rem(80px);
+        }
+    }
+
+    &__logo {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__description-wrap {
+        margin-top: rem(30px);
+    }
+    
+    &__description-text {
+        font-size: rem($fs-secondary-text--large);
+        color: $fc-primary--white;
+        line-height: 1.3;
+    }
+
+    &__column-heading {
+        font-size: rem($fs-secondary-text--small);
+        color: $fc-primary--white;
+        margin-bottom: rem(30px);
+    }
+
+    &__column-nav-wrap {
+        a {
+            display: table;
+        }
+    }
+
+    &__column-nav-item-link {
+        display: table;
+    }
+
+    &__column-nav-item {
+        color: $fc-primary--white;
+        font-size: rem($fs-secondary-text--large);
+        margin-bottom: rem(20px);
+        display: table;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__address-text {
+        color: $fc-primary--white;
+        font-size: rem($fs-secondary-text--large);
+        margin-bottom: rem(20px);
+        display: block;
+        line-height: 1.3;
+    }
+
+    &__contact-wrap {
+        display: flex;
+        align-items: center;
+        gap: rem(10px);
+        margin-bottom: rem(10px);
+    }
+
+    &__content-text {
+        color: $fc-primary--white;
+        font-size: rem($fs-secondary-text--small);
+        display: inline-block;
+        margin-bottom: rem(2px);
+    }
+
+    &__social-wrap {
+        margin-top: rem(20px);
+        display: flex;
+        align-items: center;
+        gap: rem(15px);
+        @include mq(large) {
+            margin-top: rem(30px);
+        }
+    }
+
+    &__copyright {
+        margin-top: rem(30px);
+        border-top: 1px solid $brc-primary--white;
+        @include mq(large) {
+            margin-top: rem(70px);
+        }
+    }
+
+    &__copyright-text {
+        text-align: center;
+        color: $fc-primary--white;
+        margin-top: rem(30px);
+        font-size: rem($fs-secondary-text--large);
+
+        &--underline {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+// Updated
